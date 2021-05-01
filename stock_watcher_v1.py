@@ -26,7 +26,7 @@ def main():
     logging.info("StockWatcherV1 - start program")
 
     # PICK 4 of your own favorite STOCK SYMBOLS
-    stock_list = ["XXXX", "YYYY", "ZZZZ", "SSSS"]
+    stock_list = ["AAPL", "AMZN", "NFLX", "MSFT"]
 
     for i in range(len(stock_list)):
         stock = stock_list[i].upper()
@@ -67,11 +67,11 @@ def get_quote(symbol):
     # DUMMY PRICES to simulate prices from Yahoo Finance
     # Change $$$’s to 6 different integer price values
     # Example: '134', '136', '133' …
-    prices = ['$$$', '$$$', '$$$', '$$$', '$$$', '$$$']
+    prices = ['150', '140', '143', '145', '153', '144']
     price = prices[0]
     # Change prev_price $$$ to an integer price value
     # The value should be close to prices above (eg. '135')
-    prev_price = '$$$'
+    prev_price = '151'
 
     text = "Start watching " + symbol + ": Price: " + price
     print(text)
